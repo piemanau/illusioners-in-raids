@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "jeb-squid",
+  "version": "${version}",
+  "name": "Jeb Squid",
+  "description": "A configurable mod for the texture of a glow squid. It can be RGB or normal.",
+  "authors": [
+    "LimeShulkerBox"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/",
+    "sources": "https://github.com/LimeShulkerBox/lime-fabric-example-mod",
+    "issues": "https://github.com/LimeShulkerBox/lime-fabric-example-mod/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/jebsquid/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.limeshulkerbox.limeexamplemod.ClientInitializer"
+    ],
+    "main": [
+      "com.limeshulkerbox.limeexamplemod.ModInitializer"
+    ],
+    "modmenu": [
+      "com.limeshulkerbox.limeexamplemod.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "modid.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*",
+    "minecraft": "1.17.x"
+  }
+}
